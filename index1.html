@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NOVA — My Interactive Playground</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <script src="starfield.js" defer></script>
+</head>
+
+<body>
+    <canvas id="starfield" aria-hidden="true"></canvas>
+    <header class="navbar">
+        <a href="#" class="logo">NOVA<span>.</span></a>
+        <div class="status">
+            <span class="status-dot"></span>
+            SYSTEM ONLINE
+        </div>
+    </header>
+
+    <main class="hero">
+        <p class="eyebrow">YOUR WORLD. YOUR RULES.</p>
+
+        <h1>Enter the <span>unknown.</span></h1>
+
+        <p class="description">
+            A little corner of the internet where imagination
+            has no boundaries. Explore, experiment, discover, and execute.
+        </p>
+
+        <div class="clock-card">
+            <p class="label">YOUR LOCAL TIME</p>
+            <h2 id="clock">00:00:00</h2>
+            <p id="date">Loading date...</p>
+        </div>
+
+        <button id="exploreBtn">Discover something <span>↗</span></button>
+        <a href="explore.html" class="home-explore-link">
+    Explore<span>↗</span>
+</a>
+
+
+        
+<div class="message-box" aria-live="polite">
+    <p id="message">Your next discovery is waiting.</p>
+</div>
+
+<section class="explore-panel">
+    <p class="label">CHOOSE YOUR EXPERIENCE</p>
+
+    <div class="feature-grid">
+        <button class="feature-btn" data-mode="fact">
+            <span>◈</span>
+            Random Fact
+        </button>
+
+        <button class="feature-btn" data-mode="mystery">
+            <span>⌘</span>
+            Mystery
+        </button>
+
+        <button class="feature-btn" data-mode="decision">
+            <span>✳</span>
+            Decide for Me
+        </button>
+    </div>
+
+    <p id="result" aria-live="polite">
+        Select an experience to begin.
+    </p>
+</section>
+    </main>
+
+    <footer>
+        <p>A CURIOSITY IN THE MAKING.</p>
+        <p>© 2026 NOVA (Alpha)</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Explore — NOVA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="explore.js" defer></script>
+</head>
+<body>
+
+    <header class="navbar">
+        <a href="index1.html" class="logo">NO<span>VA</span></a>
+
+        <nav class="explore-nav">
+            <a href="index1.html">Home</a>
+            <a href="explore.html" aria-current="page">Explore</a>
+        </nav>
+    </header>
+
+    <main class="explore-page">
+
+        <div class="explore-heading">
+            <p class="eyebrow">A JOURNEY BEYOND THE KNOWN</p>
+            <h1>Explore the <span>unknown.</span></h1>
+            <p class="explore-intro">
+                A space for thoughts, discoveries, and the things
+                waiting to be uncovered.
+            </p>
+        </div>
+
+        <section class="cosmic-cards">
+
+            <!-- CARD 1: COSMIC QUOTE GENERATOR -->
+            <article class="feature-card">
+                <p class="card-number">01 / INSPIRATION</p>
+                <div class="card-symbol" aria-hidden="true">✧</div>
+
+                <h2>Cosmic Quotes</h2>
+                <p class="card-description">
+                    A thought can change the way you see the universe.
+                </p>
+
+                <blockquote id="cosmicQuote" aria-live="polite">
+                    The universe is vast, but the mind can travel further.
+                </blockquote>
+
+                <button id="newQuoteBtn" type="button">
+                    Discover a quote <span>↗</span>
+                </button>
+            </article>
+
+            <!-- CARD 2: THOUGHT OF THE DAY -->
+            <article class="feature-card">
+                <p class="card-number">02 / REFLECTION</p>
+                <div class="card-symbol" aria-hidden="true">☾</div>
+
+                <h2>Thought of the Day</h2>
+                <p class="card-description">
+                    Pause for a moment. Consider another perspective.
+                </p>
+
+                <blockquote id="dailyThought" aria-live="polite">
+                    Perspective determines what the mind perceives.
+                </blockquote>
+
+                <p class="thought-date" id="thoughtDate"></p>
+
+                <p class="card-footnote">
+                    One day. One thought. A different perspective.
+                </p>
+            </article>
+
+            <!-- CARD 3: HIDDEN MESSAGE -->
+            <article class="feature-card">
+                <p class="card-number">03 / THE UNKNOWN</p>
+                <div class="card-symbol" aria-hidden="true">⌁</div>
+
+                <h2>Hidden Message</h2>
+                <p class="card-description">
+                    Not everything is revealed at first glance.
+                </p>
+
+                <div class="hidden-message" id="hiddenMessage" aria-live="polite">
+                    <span class="message-placeholder">[ MESSAGE ENCRYPTED ]</span>
+                </div>
+
+                <button id="revealBtn" type="button">
+                    Reveal message <span>↗</span>
+                </button>
+            </article>
+            <section class="cosmic-map-section">
+
+    <div class="map-header">
+        <span class="map-system-label">NAVIGATION SYSTEM // 01</span>
+        <h2>Cosmic Exploration Map</h2>
+        <p>Navigate through the unknown.</p>
+    </div>
+
+    <div class="cosmic-map">
+
+        <!-- Orbital rings -->
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <!-- Connection paths -->
+        <div class="map-line line-horizontal"></div>
+        <div class="map-line line-vertical"></div>
+
+        <!-- Memory -->
+        <button class="map-node node-memory" data-destination="memory">
+            <span class="node-star">✦</span>
+            <span class="node-name">MEMORY</span>
+            <span class="node-status">SECTOR 01</span>
+        </button>
+
+        <!-- Ideas -->
+        <button class="map-node node-ideas" data-destination="ideas">
+            <span class="node-star">✦</span>
+            <span class="node-name">IDEAS</span>
+            <span class="node-status">SECTOR 02</span>
+        </button>
+
+        <!-- NOVA -->
+        <button class="map-node node-nova" data-destination="nova">
+            <span class="nova-core"></span>
+            <span class="node-name">NOVA</span>
+            <span class="node-status">ORIGIN</span>
+        </button>
+
+        <!-- Philosophy -->
+        <button class="map-node node-philosophy" data-destination="philosophy">
+            <span class="node-star">✦</span>
+            <span class="node-name">PHILOSOPHY</span>
+            <span class="node-status">SECTOR 03</span>
+        </button>
+
+        <!-- Unknown -->
+        <button class="map-node node-unknown" data-destination="unknown">
+            <span class="node-star">✦</span>
+            <span class="node-name">UNKNOWN</span>
+            <span class="node-status">SECTOR 04</span>
+        </button>
+
+    </div>
+
+    <div class="map-info" id="mapInfo">
+        <span class="map-info-label">DESTINATION SELECTED</span>
+        <h3 id="mapTitle">Choose a destination</h3>
+        <p id="mapDescription">
+            The universe is waiting. Choose one of the paths above.
+        </p>
+    </div>
+        </section>
+
+        <p class="explore-signature">NOVA — BEYOND THE KNOWN</p>
+
+    </main>
+
+    <footer>
+        <span>© NOVA</span>
+        <span>EXPLORE THE UNKNOWN</span>
+    </footer>
+
+</body>
+</html>
